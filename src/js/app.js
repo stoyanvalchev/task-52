@@ -1,4 +1,4 @@
-import "../scss/app.scss";
+// import "../scss/app.scss";
 
 window.addEventListener("DOMContentLoaded", () => {
   // This block will be executed once the page is loaded and ready
@@ -18,7 +18,7 @@ window.addEventListener("DOMContentLoaded", () => {
   document.body.addEventListener("click", (event) => {
     event.preventDefault();
 
-    let flag = 6;
+    let flag = 5;
     while (flag != 0) {
       add_article();
       flag--;
