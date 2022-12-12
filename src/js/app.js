@@ -15,13 +15,22 @@ window.addEventListener("DOMContentLoaded", () => {
     document.body.appendChild(articleTemplate);
   };
 
-  document.body.addEventListener("click", (event) => {
-    event.preventDefault();
+  // var flag = true;
 
-    let flag = 5;
-    while (flag != 0) {
-      add_article();
-      flag--;
-    }
-  });
+  // if (flag == true) {
+  document.body.addEventListener(
+    "click",
+    (event) => {
+      event.preventDefault();
+
+      let counter = 5;
+      while (counter != 0) {
+        add_article();
+        counter--;
+      }
+      // flag = false;
+    },
+    { once: true }
+  );
+  // }
 });
