@@ -18,7 +18,7 @@ window.addEventListener("DOMContentLoaded", () => {
   document.body.addEventListener("click", (event) => {
     event.preventDefault();
 
-    let flag = 5;
+    let flag = 6;
     while (flag != 0) {
       add_article();
       flag--;
