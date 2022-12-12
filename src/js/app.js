@@ -10,7 +10,7 @@ window.addEventListener("DOMContentLoaded", () => {
 
   let add_article = () => {
     const articleTemplate = document.createElement("article");
-    articleTemplate.classList.add("message");
+    element.classList.add("message");
     articleTemplate.innerHTML = "pravq si proba";
     document.body.appendChild(articleTemplate);
   };
@@ -18,7 +18,7 @@ window.addEventListener("DOMContentLoaded", () => {
   document.body.addEventListener("click", (event) => {
     event.preventDefault();
 
-    let flag = 6;
+    let flag = 5;
     while (flag != 0) {
       add_article();
       flag--;
