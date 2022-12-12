@@ -1,4 +1,4 @@
-import "../scss/app.scss";
+// import "../scss/app.scss";
 
 window.addEventListener("DOMContentLoaded", () => {
   // This block will be executed once the page is loaded and ready
@@ -10,7 +10,7 @@ window.addEventListener("DOMContentLoaded", () => {
 
   let add_article = () => {
     const articleTemplate = document.createElement("article");
-    element.classList.add("message");
+    articleTemplate.classList.add("message");
     articleTemplate.innerHTML = "pravq si proba";
     document.body.appendChild(articleTemplate);
   };
