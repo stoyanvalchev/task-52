@@ -7,4 +7,21 @@ window.addEventListener("DOMContentLoaded", () => {
   button.addEventListener("click", () => {
     alert("💣");
   });
+
+  let add_article = () => {
+    const articleTemplate = document.createElement("article");
+    articleTemplate.classList.add("message");
+    articleTemplate.innerHTML = "pravq si proba";
+    document.body.appendChild(articleTemplate);
+  };
+
+  document.body.addEventListener("click", (event) => {
+    event.preventDefault();
+
+    let flag = 5;
+    while (flag != 0) {
+      add_article();
+      flag--;
+    }
+  });
 });
